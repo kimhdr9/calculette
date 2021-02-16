@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bulma cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <!-- font-awesome --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- mon style -->
+    <link rel="stylesheet" href="style.css">
+    <title>Projet Calculette</title>
+</head>
+<body>
+   
+    <div class="container">
+        <!-- le titre -->
+        <h1 class="title is-2" id="titre">Calculette Javascript </h1>
+        <!-- la structure -->
+        <div class="container" id="calculette">
+                <div class="container">
+                    <div class="box field">
+                        <div id="ecran">
+                            <!-- Ecran de la calculette -->
+                        </div>
+                    </div>
+                </div>
+                <!-- le clavier -->
+                <div id="clavier">
+                    <div class="columns">
+                    <div class="column">
+                        <div class="section"><button class="button is-rounded is-link" value="7">7</button></div>
+                        <div class="section"><button class="button is-rounded is-link" value="4">4</button></div>
+                        <div class="section"><button class="button is-rounded is-link" value="1">1</button></div>
+                    </div>
+                    <div class="column">
+                        <div class="section"><button class="button is-rounded is-link" value="8">8</button></div>
+                        <div class="section"><button class="button is-rounded is-link" value="5">5</button></div>
+                        <div class="section"><button class="button is-rounded is-link" value="2">2</button></div>
+                        <div class="section"><button class="button is-rounded is-link" value="0">0</button></div>
+                    </div>
+                    <div class="column">
+                        <div class="section"><button class="button is-rounded is-link" value="9">9</button></div>
+                        <div class="section"><button class="button is-rounded is-link" value="6">6</button></div>
+                        <div class="section"><button class="button is-rounded is-link" value="3">3</button></div>
+                    </div>
+                    <div class="column">
+                        <!-- Les opérateurs -->
+                        <div class="section"><button class="button is-rounded is-link" value="+"><i class="fas fa-plus"></i></button></div>
+                        <div class="section"><button class="button is-rounded is-link" value="-"><i class="fas fa-minus"></i></button></div>
+                        <div class="section"><button class="button is-rounded is-link" value="*"><i class="fas fa-times"></i></button></div>
+                        <div class="section"><button class="button is-rounded is-link" value="/"><i class="fas fa-divide"></i></button></div>
+                    </div>
+                    <div class="column">
+                        <div class="section"><button class="button is-rounded is-link" value="Effacer"><i id="icon" class="fas fa-backspace"></i></button></div>
+                        <div class="section"><button class="button is-rounded is-link egale" value="="><i id="icon" class="fas fa-equals"></i></button></div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
